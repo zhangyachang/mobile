@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
+import Layout from './components/layout/index'
+import Home from './components/home/index'
+import Search from "./components/search";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1>主页面</h1>
-      </div>
+      <Router>
+        <Layout>
+          <Switch>
+            <Route exact path={'/'} component={Home} />
+            <Route exact path={'/search'} component={Search} />
+          </Switch>
+        </Layout>
+      </Router>
+
     );
   }
 }
