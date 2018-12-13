@@ -8,7 +8,7 @@ import Search from "./components/search";
 class App extends Component {
   render() {
     return (
-      <Router basename='/'>
+      <Router>
         <Layout>
           <Switch>
             <Route exact path={'/'} component={Home} />
