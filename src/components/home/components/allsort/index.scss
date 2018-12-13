@@ -1,0 +1,70 @@
+/* 综合排序 */
+.h_shops{
+  color: #666;
+  padding-bottom: 1rem !important;
+}
+/* 综合排序中的每一个列表 */
+.h_shop_list_item{
+  padding: 0.3rem 0;
+  .h_shop_list_con{
+    display: flex;
+    justify-content: space-between;
+    .hsli_logo{
+      width: 1.3rem;
+      height: 1.3rem;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .h_shop_list_con_info{
+      width: calc(100% - 1.3rem);
+      padding-left: 0.2rem;
+      font-size: 0.16rem;
+      .h_shop_list_con_info_title{
+        margin-bottom: 0;
+        font-size: 0.3rem;
+        font-weight: bold;
+        color: #333;
+      }
+      .ant-rate{
+        font-size:9px;
+        .ant-rate-star{
+          margin-right: 0.01rem;
+        }
+      }
+      .ant-rate-text{
+        transform: scale(0.9);
+        margin-left: 0.01rem;
+        font-size: 0.10rem;
+      }
+      .h_shop_list_con_info_int{
+        transform: scale(0.9);
+        margin: 0.1rem 0 0 -0.3rem;
+      }
+    }
+  }
+  .h_shop_list_cheap{
+    position: relative;
+    padding-left: 1.5rem;
+    p{
+      margin-bottom: 0;
+    }
+    p:nth-child(1){
+      margin: 0.18rem 0 0.12rem -0.3rem;
+      font-size: 0.16rem;
+      transform: scale(0.9);
+    }
+    .h_shop_list_cheap_itemspan{
+      padding: 0 0.06rem;
+      margin-right: 0.05rem;
+      border-radius: 0.02rem 0.03rem;
+      color: #fff;
+    }
+    .h_shop_list_cheap_listbtn{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+/* 菜单部分 */
+
+.h_menu{
+  padding-top: 0.22rem;
+  .h_menu_item{
+    a{
+      display: inline-block;
+      width: 20%;
+      text-align: center;
+      img{
+        width: 0.9rem;
+        height: 0.9rem;
+        margin: auto;
+      }
+      span{
+        font-size: 0.16rem;
+        color: #666;
+      }
+    }
+  }
+  .ant-carousel .slick-dots{
+    bottom: -10px;
+    li.slick-active{
+      background: blue;
+      button{
+        width: 20px;
+        background: #169CFB;
+      }
+    }
+    li{
+      button{
+        width: 10px;
+        background: #aaa;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.h_top_location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.34rem;
+  color: #fff;
+  background: #0E9CFD;
+  .h_top_content{
+    width: 7rem;
+    padding-top: 0.12rem;
+    height: 0.98rem;
+    line-height: 0.98rem;
+    .iconfont{
+      font-size: 0.38rem;
+    }
+    span{
+      font-weight: bold;
+      margin-left: 0.1rem;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.h_shops_menu{
+  position: sticky;
+  top: 1.02rem;
+  z-index: 999;
+  background: #FEFEFE;
+
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+  line-height: 0.8rem;
+  font-size: 0.28rem;
+  li{
+    height: 0.8rem;
+    .icon-f111{
+      font-size: 0.28rem;
+    }
+  }
+}
+.active{
+  color: #333;
+  font-weight: bold;
+}
+.h_shop_list{
+}

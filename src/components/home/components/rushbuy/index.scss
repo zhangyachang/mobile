@@ -1,0 +1,42 @@
+/* 抢购 */
+.h_rushbuy{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+  .hr_item{
+    position: relative;
+    width: 3.5rem;
+    height: 2.8rem;
+    text-indent: 0.26rem;
+    background: #F4F4F4;
+    .title{
+      padding-top: 0.2rem;
+      margin-bottom: 0;
+      font-size: 0.34rem;
+      font-weight: bold;
+    }
+    .hr_quality_title{
+      color: #000;
+    }
+    .hr_rushbuy_title{
+      color: red;
+    }
+    .hr_quality_desc{
+      margin-bottom: 0.2rem;
+      font-size: 0.28rem;
+      color: #777;
+    }
+    .hr_quality_rush{
+      font-size: 0.2rem;
+      color: #af8260;
+      font-weight: bold;
+    }
+    .hr_item_img{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 2.4rem;
+      height: 1.6rem;
+    }
+  }
+}
