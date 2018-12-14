@@ -10,22 +10,27 @@
   height: 1rem;
   box-shadow: 0 -0.03rem 0.1rem rgba(0,0,0,.1);
   background: #FEFEFE;
-  color: #8e8e93;
   .h_footnav_item{
-    display: inherit;
-    flex-direction: column;
-    text-align: center;
+
+    a{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: #8e8e93;
+    }
     .iconfont{
       margin-top: 0.1rem;
       font-size: 0.4rem;
+
     }
     span{
       margin-top: -0.1rem;
       font-size: 0.2rem;
       transform: scale(0.9);
+      color: #8e8e93;
     }
   }
   .hf_active{
-    color: #0089dc;
+    color: #0089dc !important;
   }
 }

@@ -1,0 +1,21 @@
+/* 顶部导航信息 */
+.md_header{
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  height: 0.88rem;
+  color: #fff;
+  background: #0E8EFD;
+  .icon-fanhui2{
+    position: absolute;
+    top: 0.2rem;
+    font-size: 0.36rem;
+  }
+  .title{
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 0.88rem;
+  }
+}

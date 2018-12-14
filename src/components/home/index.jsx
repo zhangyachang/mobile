@@ -8,7 +8,7 @@ import Banner from './components/banner/index'
 import Recommond from './components/recommend/index'
 import ShopMenu from './components/shopmenu/index'
 import Allsort from './components/allsort/index'
-import FootNav from './components/footnav/index'
+import FootNav from '../base/footnav/index'
 
 
 import './index.scss'

@@ -1,0 +1,47 @@
+
+
+/* 菜单 */
+.md_menu{
+  position: sticky;
+  top: 0.88rem;
+  z-index: 999;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.28rem;
+  background: #0E8EFD;
+  .md_menu_list{
+    width: 6.6rem;
+    overflow: auto;
+    display: flex;
+    .me_menu_list_ul{
+      margin-bottom: 0;
+      white-space: nowrap;
+      li{
+        display: inline-block;
+        margin-right: 0.56rem;
+        a{
+          color: #fff;
+          opacity: 0.7;
+        }
+      }
+      .active{
+        border-bottom: 1px solid #fff;
+        font-weight: 700;
+        color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+  .icon-ico_open{
+    position: absolute;
+    top: 0.01rem;
+    right: 0.16rem;
+    font-size: 0.24rem;
+    color: #fff;
+
+  }
+}
+
+.menu_detail .h_shops_menu{
+  top: 1.68rem;
+}
