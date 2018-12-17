@@ -53,3 +53,14 @@ ul{
 .pd20{
     padding: 0 0.2rem;
 }
+
+/* 阿里图标太烦了 每个还需要另外设置字体样式 直接继承父级*/
+.iconfont{
+    font-size: inherit;
+}
+
+/* 引入antd样式之后出现的好多问题 */
+p, div, ul li, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}

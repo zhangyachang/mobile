@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import Back from '../base/back/index'
 import './index.scss'
 
 class Search extends Component {
@@ -7,8 +8,8 @@ class Search extends Component {
     return (
       <div className={'s_search'}>
         {/* 搜索框 */}
-        <section className={'s_search_wrapper pd20'}>
-          <i className={'iconfont icon-fanhui2'}></i>
+        <section className={'s_search_wrapper'}>
+          <Back />
           <div className={'s_box'}>
             <i className={'iconfont icon-ziyuan'}></i>
             <input type="text" placeholder={'输入商家、商品名称'}/>

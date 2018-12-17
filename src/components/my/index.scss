@@ -1,0 +1,167 @@
+.my{
+  height: 100vh;
+  background: #F4F4F4;
+}
+
+/* 登录注册 */
+.my_login{
+  display: flex;
+  height: 2.2rem;
+  padding: 0.5rem 0.3rem;
+  background: #0E8DFD;
+  .my_login_icon{
+    width: 1.2rem;
+    height: 1.2rem;
+    img{
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .my_login_status{
+    flex-grow: 1;
+    margin-left: 0.36rem;
+    color: #fff;
+    .my_login_title{
+      margin-bottom: 0.1rem;
+      font-weight: bold;
+      font-size: 0.42rem;
+    }
+    .my_login_tips{
+      margin-bottom: 0;
+      font-size: 0.24rem;
+      .icon-shouji1{
+        font-size: 0.24rem;
+      }
+    }
+  }
+  .my_login_right_icon{
+
+    line-height: 1.2rem;
+    color: #ccc;
+    .icon-youjiantou{
+      font-size: 0.24rem;
+    }
+  }
+}
+
+/* 红包 */
+.my_rp{
+  display: flex;
+  height: 1.68rem;
+  background: #fff;
+  .my_rp_item{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+
+    color: #666;
+    font-weight: bold;
+    .iconfont{
+      padding: 0.06rem 0.12rem;
+      margin-bottom: 0.02rem;
+      font-size: 0.3rem;
+      font-weight: 400;
+      border-radius: 50%;
+      color: #fff;
+    }
+    .red{
+      background: #FE5F3E;
+    }
+    .yellow{
+      background: #FE980F;
+    }
+    .green{
+      background: #68C11A;
+    }
+  }
+  .my_rp_item:last-child{
+    border-right: none;
+  }
+}
+
+/* 我的地址 wrapper */
+.my_location{
+  margin-top: 0.2rem;
+}
+
+/* 我的地址 */
+.my_row_item{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 0.9rem;
+  font-size: 0.32rem;
+  background: #fff;
+  .my_row_item_l_icon{
+    width: 0.8rem;
+    text-align: center;
+    .iconfont{
+      font-size: 0.4rem;
+      color: #4BA5EE;
+    }
+  }
+  .my_row_item_r_icon{
+    position: absolute;
+    right: 0.4rem;
+    font-size: 0.16rem;
+  }
+}
+
+/* 金币商城 wrapper */
+.my_gold_mall{
+  margin-top: 0.2rem;
+}
+
+/* 我的客服和下载 */
+.my_customer{
+  margin-top: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,13 +10,19 @@
     position: absolute;
     top: 0.2rem;
     font-size: 0.36rem;
+    color: #fff;
   }
   .title{
-    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    max-width: 50%;
+    margin-bottom: 0;
+    line-height: 0.88rem;
     font-size: 0.36rem;
     font-weight: 700;
-    margin-bottom: 0;
-    text-align: center;
-    line-height: 0.88rem;
+    color: #fff;
+    transform: translateX(-50%);
   }
 }
