@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import TopPageInfo  from "../base/toppageinfo";
 
-import FootNav from '../home/components/footnav'
+import FootNav from '../base/footnav'
 
 class Find extends Component {
   render() {
