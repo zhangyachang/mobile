@@ -17,6 +17,7 @@ export class Shop extends Component {
         
         {/* 商家 介绍*/}
         <section className='s_description'>
+<<<<<<< HEAD
           <h2 className={'s_shop_name'}>
             深圳麦当劳海岸城餐厅
             <i className={'iconfont icon-youjiantou1'}></i>
@@ -36,6 +37,9 @@ export class Shop extends Component {
           <p>
             公告：11月28日起，海陆空三维大餐
           </p>
+=======
+          
+>>>>>>> bd9f857748dc77d2535582124497470ea5eb8c59
         </section>
 
       </div>

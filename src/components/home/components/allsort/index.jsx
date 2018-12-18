@@ -1,13 +1,25 @@
 import React, {Component} from 'react';
+import {Redirect} from 'react-router-dom'
 
 import './index.scss'
 import {Rate} from 'antd'
 class Allsort extends Component {
+
+  go = (id) => {
+    console.log('点击了就会触发我');
+    console.log(this);
+
+    this.props.go({
+      id
+    });
+  };
+
   render() {
     return (
       <div className={'h_shops pd20'}>
         <section className={'h_shop_list'}>
-          <section className={'h_shop_list_item'}>
+
+          <section onClick={this.go.bind(null, '111')} className={'h_shop_list_item'}>
             <div className={'h_shop_list_con'}>
               <div className={'hsli_logo'}>
                 <img src={require('../../../../static/img/shoplogo/1.webp')} alt=""/>

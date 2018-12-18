@@ -14,7 +14,18 @@ import FootNav from '../base/footnav/index'
 import './index.scss'
 
 class Home extends Component {
+  
+  // 跳转到相应的商铺
+  goShop = (id) => {
+    console.log('触发home组件的函数 并接受到参数');
+    console.log(id.id);
+    this.props.history.push(`/shop/${id.id}`)
+  }
+
   render() {
+    console.log('home组件中');
+    console.log(this.props);
+
     return (
       <div className='app'>
 
@@ -38,7 +49,9 @@ class Home extends Component {
 
         {/* 综合排序 */}
         <ShopMenu />
-        <Allsort />
+        <Allsort
+          go={this.goShop}
+        />
 
         {/* 底部导航 */}
         <FootNav />

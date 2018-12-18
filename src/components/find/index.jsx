@@ -23,7 +23,7 @@ class Find extends Component {
         <section className={'f_gold_coin'}>
           <img src={require('../../static/img/find/2.png')} alt=""/>
         </section>
-
+      
         {/* 限时好礼 */}
         <section className={'f_flash_gifts'}>
           <img src={require('../../static/img/find/3.png')} alt=""/>
