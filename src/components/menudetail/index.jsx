@@ -11,7 +11,6 @@ class MenuDetail extends Component {
 
     console.log('传递过来了什么');
     console.log(this.props);
-
     console.log(`传递过来的参数${JSON.stringify(this.props.match.params)}`);
 
     return (

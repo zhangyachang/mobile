@@ -5,6 +5,7 @@ import OrderForm from "../components/orderform";
 import My from "../components/my";
 import MenuDetail from "../components/menudetail";
 import NotFind from "../components/notfind";
+import Shop from "../components/shop";
 
 
 const routers = [
@@ -32,6 +33,10 @@ const routers = [
   {
     path: '/menudetail/:id',
     component: MenuDetail
+  },
+  {
+    path: '/shop',
+    component: Shop
   },
   {
     path: '*',

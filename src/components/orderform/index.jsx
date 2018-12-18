@@ -11,7 +11,7 @@ class OrderForm extends Component {
         <TopPageInfo
           title={'订单'}
         />
-
+        
         {/* 登录 */}
         <section className={'o_login'}>
           <img src={require('../../static/img/orderform/2.png')} alt=""/>
