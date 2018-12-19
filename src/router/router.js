@@ -6,10 +6,7 @@ import My from "../components/my";
 import MenuDetail from "../components/menudetail";
 import NotFind from "../components/notfind";
 import Shop from "../components/shop";
-<<<<<<< HEAD
 
-=======
->>>>>>> bd9f857748dc77d2535582124497470ea5eb8c59
 
 const routers = [
   {
