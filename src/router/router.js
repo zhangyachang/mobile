@@ -42,8 +42,6 @@ const routers = [
     path: '*',
     component: NotFind
   }
-
-
 ];
 
 
