@@ -7,21 +7,39 @@ import Rushbuy from './components/rushbuy/index'
 import Banner from './components/banner/index'
 import Recommond from './components/recommend/index'
 import ShopMenu from './components/shopmenu/index'
-import Allsort from './components/allsort/index'
+import Allsort from '../base/allsort/index'
 import FootNav from '../base/footnav/index'
+
+import Axios from 'axios'
+import Config from '../../config/config.js'
 
 
 import './index.scss'
 
 class Home extends Component {
-  
-  // 跳转到相应的商铺
-  goShop = (id) => {
-    console.log('触发home组件的函数 并接受到参数');
-    console.log(id.id);
-    this.props.history.push(`/shop/${id.id}`)
+  constructor() {
+    super();
+    this.state = {
+      shoplist: []
+    }
   }
-
+  
+  
+  componentDidMount() {
+    let {url} = Config;
+    Axios.get(`${url}/api/shoplist`)
+      .then(res =>{
+        this.setState({
+          shoplist: res.data.data
+        })
+      
+      })
+      .catch(err => {
+        console.log('首页商家列表页面请求失败');
+        
+      })
+  }
+  
   render() {
     console.log('home组件中');
     console.log(this.props);
@@ -50,7 +68,7 @@ class Home extends Component {
         {/* 综合排序 */}
         <ShopMenu />
         <Allsort
-          go={this.goShop}
+          shoplist={this.state.shoplist}
         />
 
         {/* 底部导航 */}

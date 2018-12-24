@@ -6,6 +6,7 @@ import My from "../components/my";
 import MenuDetail from "../components/menudetail";
 import NotFind from "../components/notfind";
 import Shop from "../components/shop";
+import PromotionSub from "../components/promotionsub";
 
 
 const routers = [
@@ -31,12 +32,19 @@ const routers = [
     component: My
   },
   {
-    path: '/menudetail/:id',
+    // 进入菜单内页
+    path: '/api/category/list:id',
     component: MenuDetail
   },
   {
-    path: '/shop',
+    // 商家内页
+    path: '/api/detail/:id',
     component: Shop
+  },
+  {
+    // 轮播图内页
+    path: '/api/promotionsub',
+    component: PromotionSub
   },
   {
     path: '*',

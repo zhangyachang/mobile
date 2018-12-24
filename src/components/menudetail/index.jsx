@@ -2,17 +2,37 @@ import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
 
 import './index.scss'
+import Axios from 'axios'
+import Config from '../../config/config.js'
 import TopPageInfo from '../base/toppageinfo'
 import ShopMenu from '../home/components/shopmenu/index'
-import AllSort from '../home/components/allsort/index'
+import AllSort from '../base/allsort/index'
 
 class MenuDetail extends Component {
+  
+  state = {
+    data: []
+  };
+  
+  componentDidMount() {
+    let {url} = Config;
+    
+    console.log(`${url}/api/category/list${this.props.match.params.id}`);
+    Axios.get(`${url}/api/category/list${this.props.match.id}`)
+      .then(res => {
+        this.setState({
+          data: res.data.data
+        })
+      })
+      .catch(err => {
+        console.log('请求失败');
+      })
+  }
+  
+  
+  
   render() {
-
-    console.log('传递过来了什么');
-    console.log(this.props);
-    console.log(`传递过来的参数${JSON.stringify(this.props.match.params)}`);
-
+    console.log(`到内页 传递过来的参数${JSON.stringify(this.props.match.params)}`);
     return (
       <div className={'menu_detail'}>
         {/* 菜单的详情页 */}
@@ -74,7 +94,9 @@ class MenuDetail extends Component {
 
         {/* 商品菜单 */}
         <div className={'md_shop_list'}>
-          <AllSort></AllSort>
+          <AllSort
+            shoplist={this.state.data}
+          />
         </div>
 
 

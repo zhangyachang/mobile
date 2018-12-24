@@ -1,14 +1,20 @@
 import React, { Component } from 'react'
 import {NavLink} from "react-router-dom";
 
+import Back from '../base/back/index.jsx'
 
 import './index.scss'
 export class Shop extends Component {
   render() {
+    console.log('进入商家内页传递过来的参数' + JSON.stringify(this.props.match.params));
+    
     return (
       <div className={'shop'}>
         {/* shop组件 */}
-
+  
+        <Back
+        
+        />
         {/* 商家logo */}
         <div className='s_logo_wrapper'>
           <img src={require('../../static/img/shop/1.png')} alt=""/>
@@ -36,7 +42,6 @@ export class Shop extends Component {
           <p className={'s_notice'}>
             公告：11月28日起，海陆空三维大餐
           </p>
-
         </section>
         
         
