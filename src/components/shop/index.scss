@@ -25,7 +25,6 @@
 .s_description{
   height: 2.6rem;
   padding-top: 0.6rem;
-  border: 1px solid red;
 
   .s_shop_name{
     font-size: 0.4rem;
@@ -38,6 +37,220 @@
     }
   }
 
+  .s_shop_con{
+    font-size: 0.24rem;
+    text-align: center;
+    .s_score{
+      margin-right: 0.2rem;
+    }
+    .s_s_time{
+      margin-left: 0.2rem;
+    }
+  }
 
+  .s_onsale{
+    margin-left: 0.6rem;
+    font-size: 0.24rem;
+    .s_onsale_tag{
+      padding: 0.01rem 0.08rem;
+      margin-right: 0.04rem;
+      color: #fff;
+      background: #EF7373;
+    }
+    .s_onsale_new{
+      margin-right: 0.5rem;
+    }
+  }
+  .s_notice{
+    margin-left: 0.6rem;
+    font-size: 0.24rem;
+  }
 }
+
+
+/* 商家导航 */
+.s_s_nav{
+  display: flex;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.3rem;
+  div{
+    flex-grow: 1;
+    text-align: center;
+    color: #666;
+  }
+  .s_selected{
+    font-weight: 700;
+    color: #333;
+    padding:0 0.1rem 0.1rem 0.1rem;
+    border-bottom: 0.06rem solid #2795FD;
+  }
+}
+
+/* 广告图 */
+.s_s_banner{
+  height: 1.76rem;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* 商家食品列表 */
+.s_content{
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+
+/* 左侧导航 */
+.s_c_leftnav{
+  width: 1.54rem;
+  flex-shrink: 0;
+  .s_c_l_list{
+    background: #F7F7F7;
+    li{
+      height: 1rem;
+      padding-left: 0.1rem;
+      font-size: 0.24rem;
+      line-height: 1rem;
+    }
+    .s_c_active{
+      background: #fff;
+    }
+  }
+}
+
+/* 右侧食品列表 */
+
+.s_list_layer{
+  height: 10.5rem;
+  overflow: scroll;
+}
+
+.s_c_rightcon{
+  .s_c_rightcon_list{
+    li{
+      display: flex;
+      padding: 0.2rem 0;
+      .s_c_rightcon_img_wrapper{
+        width: 1.9rem;
+        height: 1.9rem;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .s_c_con{
+        width: 3.75rem;
+        margin-left: 0.2rem;
+        >p{
+          font-size: 0.24rem;
+        }
+        h4{
+          font-size: 0.3rem;
+          font-weight: 700;
+          color: #333;
+        }
+        .s_c_con_des{
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .s_c_price{
+          position: relative;
+          display: flex;
+          .s_c_price_con{
+            font-size: 0.36rem;
+            color: rgb(255, 83, 57);
+            .icon-renminbi1{
+              font-size: 0.28rem;
+            }
+          }
+          .s_c_add{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 0.02rem 0.06rem;
+            border-radius: 50%;
+            text-align: center;
+            background: #2795FD;
+            color: #fff;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+/* 购物车 */
+.s_shopcart{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 1rem;
+  background: #4F4F50;
+
+  .s_cart_icon{
+    position: absolute;
+    top: -0.13rem;
+    left: 0.23rem;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    color: #5E5E61;
+    font-size: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background: #353535;
+    border: 0.12rem solid #444;
+    box-shadow: 0 -0.02rem 0.2rem 0 rgba(0,0,0,.1);
+    will-change: transform;
+    .s_cart_num{
+      position: absolute;
+      top: -0.14rem;
+      right: -0.1rem;
+      padding: 1px 5px;
+      border-radius: 50%;
+      font-size: 0.2rem;
+      color: #fff;
+      background: #ff7416;
+    }
+  }
+  .s_cart_has{
+    color: #fff;
+    background: #3390E6;
+  }
+
+  .s_cart_des{
+    flex-grow: 1;
+    margin-left: 1.8rem;
+    padding-top: 0.2rem;
+    color: #999;
+    font-size: 0.24rem;
+  }
+  .s_shop_send{
+
+    width: 2.1rem;
+    line-height: 1rem;
+    font-size: 0.3rem;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
